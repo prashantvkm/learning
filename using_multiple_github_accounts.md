@@ -18,7 +18,9 @@ e.g. id_rsa_github_work
 
 click button "New SSH Key" and then give title and paste the key content
 to view the key content use below command
-less ~/.ssh/id_rsa_(you key name).pub 
+```language
+less ~/.ssh/id_rsa_(you key name).pub
+``` 
 
 3- Now do the same steps again for your personal account setup.
 
@@ -56,7 +58,7 @@ create a file ~/work/.gitconfig and add below content
         email = your-work-email-address
 ```
 
-6- after this you have to set the remote repo url according to the user you are using.
+6- after this you have to set the remote repo url in your secondary account (personal) according to the user you are using.
 
 ```language
 # if you are updating
@@ -67,4 +69,6 @@ git remote add origin git@github-personal:username/reponame.git
 
 ```
 
-this is a one time process after this you can commit and push without worry.
+this is a one time process after this you can commit and push without worry in your personal or work account.
+
+**Note:** The last step you have to every time whenever you start a new repo for your secondary account (personal). For default last step is not required.
