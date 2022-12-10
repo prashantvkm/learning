@@ -8,9 +8,9 @@
 ssh-keygen -t rsa -C "your-email-address"
 ```
 
-give a unique key name starting with id_rsa_
+give a unique key name starting with *id_rsa_*
 
-e.g. id_rsa_github_work
+e.g. id_rsa_work_github
 
 2- set the key ending with .pub into github 
 
@@ -31,13 +31,13 @@ less ~/.ssh/id_rsa_(you key name).pub
 Host github.com
   HostName github.com
   User git
-  IdentityFile ~/.ssh/id_rsa_github_work
+  IdentityFile ~/.ssh/id_rsa_work_github
 
 #personal github account
 Host github-personal
   HostName github.com
   User git
-  IdentityFile ~/.ssh/id_rsa_github_personal
+  IdentityFile ~/.ssh/id_rsa_personal_github
 ```
 
 5- after this add below content in ~/.gitconfig
@@ -71,4 +71,4 @@ git remote add origin git@github-personal:username/reponame.git
 
 this is a one time process after this you can commit and push without worry in your personal or work account.
 
-**Note:** The last step you have to every time whenever you start a new repo for your secondary account (personal). For default last step is not required.
+**Note:** The last step you have to every time whenever you start a new repo for your secondary account (personal). For default account last step is not required.
