@@ -1,6 +1,6 @@
 # GIT Config for short and simple commands
 
-Below is the file (with path) where you need to the configuration.
+Below is the file path (Mac/Unix) where you need to add the configuration.
 
 ```console
 ~/.gitcofig
